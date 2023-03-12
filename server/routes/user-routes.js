@@ -72,7 +72,7 @@ router.post('/users', (req, res) => {
           JSON.stringify(err, null, 2),
         );
         res.status(500).json(err); // an error occurred
-      } else {git
+      } else {
         console.log('Added item:', JSON.stringify(data, null, 2));
         res.json({ Added: JSON.stringify(data, null, 2) });
       }
